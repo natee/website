@@ -202,6 +202,15 @@
 .natee .experence .head{
 	color:#fff;
 }
+.natee .experence .content{
+	margin-bottom: 3em;
+}
+.natee .experence .list{
+	margin-bottom: 10px;
+}
+.natee .experence .list ul li{
+	line-height: 1.5em;
+}
 .natee .footer{
 	background: #111;
 	padding: 1em;
