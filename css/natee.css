@@ -208,6 +208,9 @@
 .natee .experence .list{
 	margin-bottom: 10px;
 }
+.natee .experence .list-content{
+	margin-left:0.4em;
+}
 .natee .experence .list ul li{
 	line-height: 1.5em;
 }
