@@ -95,6 +95,9 @@
 	border-radius: 5px;
 	transition: all .25s;
 }
+.natee .pure-menu>ul>li{
+	position: relative;
+}
 .natee .pure-menu li a:hover{
 	color:#fff;
 	background-color: #2d3e50;
@@ -103,13 +106,28 @@
 	box-shadow: inset 0 1px 3px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
-.natee .pure-menu li.pure-menu-selected a{
+.natee .pure-menu li.pure-menu-selected>a{
 	background-color: #fc0;
 	color: #222;
 	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.5);
 	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.5);
 	box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.5);
 	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+.natee .pure-menu .sub-nav{
+	left: 0;
+	top: 3em;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.2);
+	padding:0.3em 0.5em;
+}
+.natee .pure-menu li:hover .sub-nav{
+	visibility: visible;
+}
+.natee .pure-menu .sub-nav a{
+	background: none;
+	color:#222;
 }
 
 .natee .pure-button-primary{
