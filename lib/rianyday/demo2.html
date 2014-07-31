@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>rainyday.js demo #2</title>
+        <style media="screen">
+            body {
+                overflow: hidden;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script src="rainyday.js"></script>
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this
+                    });
+					engine.rain([ [3, 2, 2] ], 100);
+				};
+                image.crossOrigin = 'anonymous';
+                image.src = 'http://i.imgur.com/U1Tqqdw.jpg';
+            }
+        </script>
+    </head>
+    <body onload="run();">
+        <img id="background" alt="background" src="" />
+    </body>
+</html>

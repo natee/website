@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+}
+
+.full-bg {
+	background-image: url('../img/bg.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #353a47;
+}
+.header {
+	height: 60px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+.header .header-left,.header .header-right{
+	padding: 0 5.57%;
+}
+.header-left a{
+	color:#fff;
+	text-decoration: none;
+}
+.header-right .menu-button{
+	color:#fff;
+	font-size: 30px;
+	display: table-cell;
+vertical-align: middle;
+height: 60px;
+cursor: pointer;
+}
+.container .indroduce{
+text-align: center;
+padding-top:60px;
+}
+.container .main{
+	background-color: #fff;
+	position: absolute;
+right: 0;
+bottom: 0;
+top: 0;
+left: 50%;
+overflow: auto;
+padding-top:30px;
+}
+
+.natee .skill{
+	padding:1em;
+}
+.natee .skill .head,.natee .contact .head{
+	margin:2em 0 1em;
+}
+.natee .skill .skill-item{
+	padding:1em;
+}
+
+.natee .skill .skill-item .img{
+	width: 80px;
+	height: 80px;
+	float:left;
+	box-shadow: 0 0 5px rgba(0,0,0,.2),0 0 10px rgba(0,0,0,0.1);
+	margin: 0 1em 0.5em 0;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.natee .skill .skill-item .img:before {
+	background: rgba(247, 98, 98, 0.8);
+	box-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+    content: "";
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left:-5px;
+    transform: skewX(-45deg);
+    -webkit-transform: skewX(-45deg);
+    width:25px;
+}
+.natee .skill .skill-item .img img{
+	height: 100%;
+	/*width: 100%;*/
+	border-radius: 4px;
+}
+.natee .skill .skill-item h3{
+	color: #1f8dd6;
+	margin: 0 0 0.5em;
+}
+.natee .skill .skill-item p{
+	font-size: 14px;
+	line-height: 1.4em;
+	margin-top:0;
+}
+.natee .experence{
+	background: #2d3e50;
+	color: #aaa;
+	padding:2em;
+}
+.natee .experence .head{
+	color:#fff;
+}
+.natee .experence .content{
+	margin-bottom: 3em;
+}
+.natee .experence .list{
+	margin-bottom: 10px;
+}
+.natee .experence .list-content{
+	margin-left:0.4em;
+}
+.natee .experence .list ul li{
+	line-height: 1.5em;
+}

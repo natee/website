@@ -1,0 +1,11 @@
+{
+    "name": "rainyday.js",
+    "version": "0.1.2",
+    "main": "./dist/rainyday.min.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/maroslaw/rainyday.js.git"
+    },
+    "dependencies": {
+    }
+}
