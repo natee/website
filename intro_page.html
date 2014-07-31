@@ -1,10 +1,225 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>natee介绍页</title>
+    <title>natee介绍页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.77, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/icons.css">
+	<link rel="stylesheet" href="css/pure.css">
+	<link rel="stylesheet" href="css/natee1.css">
 </head>
-<body>
-	
+<body class="natee full-bg">
+	<header class="header pure-g">
+		<div class="pure-u-1-2 header-left">
+			<h3><a href="https://natee.github.io/">natee</a></h3>
+		</div>
+		<div class="pure-u-1-2 header-right">
+			<span class="menu-button icon-list4"></span>
+		</div>
+	</header>
+	<div class="container pure-g">
+		<section class="pure-u-1-2 indroduce">
+			<div class="basic text-center">
+				<div class="basic-box pure-u-4-5 pure-u-md-3-4 pure-u-lg-1-2">
+					<h1 class="head blind-effect">对赵可感兴趣？↓↓↓</h1>
+					<p class="intro">他现在是一个前端，以后可能还会是前端，最终肯定不仅仅是前端。</p>
+					<p>
+						<a class="pure-button pure-button-primary shine-white" href="javascript:scrollToContact();">联系他</a>
+					</p>
+				</div>
+			</div>
+			<div class="contact" id="contact">
+			<h2 class="head text-center">联系方式</h2>
+			<ul class="pure-g">
+				<li class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+					<p><span class="icon-mail6"> </span><i>kerncink@gmail.com</i></p>
+				</li>
+				<li class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+					<p><span class="icon-mobile"> </span><i>132xxxx0627</i></p>
+				</li>
+				<li class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+					<p><span class="icon-github"> </span><i>@natee</i></p>
+				</li>
+				<li class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+					<p><span class="icon-qrcode"> </span><i>微信</i></p>
+				</li>
+			</ul>
+		</div>
+		</section>
+		<section class="pure-u-1-2 main">
+			<div class="skill">
+			<h2 class="head text-center">职业技能</h2>
+			<div class="pure-g">
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-html.jpg" alt="html(5)">
+					</div>
+					<h3>HTML(5)</h3>
+					<p>知道语义性的含义，熟练手写符合w3c标准的HTML页面。对于HTML5的一些地理位置、Localstorage、Web SQL停留在个人练习中。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img flip-in">
+						<img src="img/icon-css.jpg" alt="css(3)">
+					</div>
+					<h3>CSS(3)</h3>
+					<p>熟练使用CSS对网页进行（自适应）布局，了解不同浏览器的兼容性。对于CSS3中常用的效果基本会用，用过一些CSS框架，如grid.css，reset.css，pure.css等对于CSS3动画、高级效果处于要用则学，不用则研究的状态。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-js.jpg" alt="Javascript">
+					</div>
+					<h3>Javascript</h3>
+					<p>FE必备技能之一，然而他对JS的掌握只能算是菜鸟能用的程度。对于代码的合理的组织、优雅的写法，他一直都在学习。他的目标是在这项技能上有所突破，追求这方面的进步，打破瓶颈。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img fade-in-right">
+						<img src="img/icon-jquery.jpg" alt="jQuery">
+					</div>
+					<h3>jQuery</h3>
+					<p>JS的一个类库，基本上可以熟练使用。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-angular.jpg" alt="AngularJS">
+					</div>
+					<h3>AngularJS</h3>
+					<p>很火的前端MVC框架，能够用AG写网站，由于只用了几个月，也只能是熟悉基本用法，具体遇到没遇到过的问题还得查API。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img">
+						<img src="img/icon-nodejs.jpg" alt="NodeJS">
+					</div>
+					<h3>NodeJS</h3>
+					<p>学习过一段时间，对于这个东西停留在基本的操作上，写过个人小博客作为练习。对于NodeJS的优势没有过具体的应用，其更新略快，也无力持续学习。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-bootstrap.jpg" alt="bootstrap">
+					</div>
+					<h3>BootStrap</h3>
+					<p>很强大的一个前端框架，自适应布局，各种组件等。熟练使用v2和v3版本。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-gulp.png" alt="gulp">
+					</div>
+					<h3>Gulp</h3>
+					<p>前端领域的构建工具（任务管理工具），隐隐有超过Grunt的意思。这项技术对于重复性的劳动可谓是雪中送炭，熟练使用创建基本任务。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-less.jpg" alt="less">
+					</div>
+					<h3>Less</h3>
+					<p>把CSS赋予动态语言特性，可以写更少的代码达到效果。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-ps.jpg" alt="Photoshop">
+					</div>
+					<h3>Phtoshop</h3>
+					<p>熟练使用Photoshop切图，曾经做过几个网站的UI设计。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-git.jpg" alt="Git">
+					</div>
+					<h3>Git</h3>
+					<p>版本管理工具，不用说太多。</p>
+				</div>
+				<div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<div class="img bounce-down">
+						<img src="img/icon-svn.jpeg" alt="Subversion">
+					</div>
+					<h3>SVN</h3>
+					<p>版本管理工具，不用说太多。</p>
+				</div>
+			</div>
+		</div>
+		<div class="experence">
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5">
+					<img width="300" src="img/file-icons.png">
+				</div>
+				<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-3-5">
+					<h2 class="head"><i class="icon-calendar2"></i> 2013-10&nbsp;至&nbsp;今</h2>
+					<div class="content">
+						<div class="list">
+							<span class="icon-office list-head" title="就职公司"></span>
+							<span class="list-content">海智网聚网络技术（北京）有限公司</span>
+						</div>
+						<div class="list">
+							<span class="icon-cabinet list-head" title="经手项目"></span>
+							<ul class="list-content">
+								<li>商情汇</li>
+								<li>买卖商汇</li>
+								<li>智投易</li>
+								<li>经营罗盘</li>
+							</ul>
+						</div>
+						<div class="list">
+							<span class="icon-info4 list-head" title="说明"></span>
+							<span class="list-content">由于保密性的关系，项目的具体内容不方便说明。</span>
+						</div>
+					</div>
+		            
+		            <h2 class="head date"><i class="icon-calendar2"></i> 2013-06&nbsp;至&nbsp;2013-10</h2>
+		            <div class="content">
+		            	<div class="list">
+		            		<span class="icon-office list-head" title="就职公司"></span>
+		            		<span class="list-content">北京艾德思奇科技有限公司</span>
+		            	</div>
+		            	<div class="list">
+		            		<span class="icon-cabinet list-head" title="经手项目"></span>
+		            		<ul class="list-content">
+		            			<li>艾德聚合平台重构</li>
+		            		</ul>
+		            	</div>
+		            	<div class="list">
+		            		<spna class="icon-info4 list-head" title="说明"></spna>
+		            		<span class="list-content">艾德聚合平台是为移动APP开发者提供的一个信息管理平台，功能是发布应用，展示应用相关数据。</span>
+		            	</div>
+		            </div>
+		            
+		            <h2 class="head"><i class="icon-calendar2"></i> 2012-04&nbsp;至&nbsp;2013-05</h2>
+		            <div class="content">
+		            	<div class="list">
+		            		<span class="icon-office list-head" title="实习公司"></span>
+		            		<span class="list-content list-content">中国科学院化学工程研究所</span>
+		            	</div>
+		            	<div class="list">
+		            		<span class="icon-cabinet list-head" title="经手项目"></span>
+		            		<ul class="list-content">
+		            			<li>化合物搜索引擎ChemDB Portal改版</li>
+		            			<li>中国循环经济技术平台子项目--企业黄页</li>
+		            			<li>中国循环经济技术平台子项目--企业黄页--公司展示站点</li>
+		            		</ul>
+		            	</div>
+		            	<div class="list">
+							<span class="icon-info4 list-head" title="说明"></span>
+		            		<span>--</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+		</div>
+		</section>
+	</div>
+
+	<script type="text/javascript" src="lib/rianyday/dist/rainyday.min.js"></script>
+	<script type="text/javascript">
+	var engine = new RainyDay({
+		element:'img/bg.jpg',
+		parentElement:'header',
+		crop:[0,0,50,60],
+		blur:10,
+		opacity:1
+	});
+	engine.rain([
+		[1,0,20],
+		[3,3,1]
+		],100);
+	</script>
 </body>
 </html>
