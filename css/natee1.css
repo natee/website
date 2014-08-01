@@ -11,6 +11,17 @@ a {
     transitiong: color ease 0.3s, border ease 0.3s, background ease 0.3s;
 }
 
+.flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    -webkit-align-items:center;
+    justify-content: space-around;
+    -webkit-justify-content:space-around;
+}
+
 .full-bg {
     background-image: url('../img/bg.jpg');
     background-position: center top;
@@ -18,6 +29,23 @@ a {
     background-attachment: fixed;
     background-size: cover;
     background-color: #353a47;
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 7px rgba(0,0,0,0.4);
+}
+
+/*some effect*/
+/*边框发光*/
+@-webkit-keyframes  shineWhite {
+    from {box-shadow: 0 0 15px #dfdfdf; }
+    50% {box-shadow: 0 0 30px #fff; }
+    to {box-shadow: 0 0 15px #dfdfdf; }
+}
+.shine-white{
+    -webkit-animation-name: shineWhite;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
 }
 
 .rain-box {
@@ -67,9 +95,26 @@ a {
 }
 
 .container .indroduce {
-    position: relative;
+    position: absolute;
     text-align: center;
     padding-top: 60px;
+    flex-direction: column;
+    -webkit-flex-direction:column;
+    height: 100%;
+    width:50%;
+    color:#fff;
+    font-size:200%;
+}
+
+.container .indroduce .date{
+    font-size: 50%;
+    opacity: 0.4;
+}
+.natee .pure-button-primary{
+    border-radius: 4px;
+    font-size: 60%;
+    padding: 0.5em 1.5em;
+    background: rgba(0,0,0,0.1);
 }
 
 .container .main {
