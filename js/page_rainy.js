@@ -5,13 +5,14 @@ function initRain() {
             image: this,
             parentElement: document.getElementById("rainCanvas")
         });
-        engine.rain([
-            [1, 2, 8000]
-        ]);
-        engine.rain([
-            [0, 2, 0.5],
-            [4, 4, 1]
-        ], 50);
+        engine.gravity = engine.GRAVITY_NON_LINEAR;
+        engine.trail = engine.TRAIL_SMUDGE;
+        engine.rain(
+            [
+                [1, 0, 2],         // add 20 drops of size 1...
+                [3, 3, 1]           // ... and 1 drop of size from 3 - 6 ...
+            ],
+            50);
     };
     image.crossOrigin = 'anonymous';
     image.src = 'img/bg.jpg';
