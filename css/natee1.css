@@ -10,10 +10,22 @@
 	background-size: cover;
 	background-color: #353a47;
 }
+.rain-box{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+#rainCanvas{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 0;
+}
 .header {
 	height: 60px;
 	position: fixed;
-	z-index: 1;
+	z-index: 3;
 	width: 100%;
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.05);
@@ -32,6 +44,10 @@
 vertical-align: middle;
 height: 60px;
 cursor: pointer;
+}
+.container{
+    position: relative;
+    z-index: 2;
 }
 .container .indroduce{
 text-align: center;

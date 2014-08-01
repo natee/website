@@ -8,39 +8,30 @@
 	<link rel="stylesheet" type="text/css" href="css/icons.css">
 	<link rel="stylesheet" href="css/pure.css">
 	<link rel="stylesheet" href="css/natee1.css">
-	<style media="screen">
-            body {
-                overflow: hidden;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-
-            #background {
-                width: 100%;
-                height: 100%;
-            }
-        </style>
 
 	<script type="text/javascript" src="lib/rianyday/dist/rainyday.min.js"></script>
 	<script type="text/javascript">
 	function run(){
-		var image = document.getElementById('background');
+		var image = document.getElementById('rainImg');
         image.onload = function() {
             var engine = new RainyDay({
-                image: this
+                image: this,
+                parentElement: document.getElementById("rainCanvas")
             });
             engine.rain([ [1, 2, 8000] ]);
-            engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+            engine.rain([ [0, 2, 0.5], [4,4, 1] ], 50);
         };
-        // image.crossOrigin = 'anonymous';
+        image.crossOrigin = 'anonymous';
         image.src = 'img/bg.jpg';
 	}
 	
 	</script>
 </head>
-<body class="natee full-bg" onload="run();">
-<img src="" alt="tu" id="background">
+<body class="natee" onload="run();">
+	<div class="rain-box">
+		<img src="" alt="tu" id="rainImg">
+	</div>
+	<div id="rainCanvas"></div>
 
 	<header class="header pure-g">
 		<div class="pure-u-1-2 header-left">
