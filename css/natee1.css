@@ -304,6 +304,11 @@ a {
     margin-right:10px;
 }
 .footer li a{
-    color:#fff;
     font-size:12px;
+    color:rgba(255,255,255,0.6);
+
+}
+.footer li a:hover{
+    color:rgba(255,255,255,1);
+    transitiong: color ease 0.3s,
 }
