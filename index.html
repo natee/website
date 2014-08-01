@@ -10,50 +10,9 @@
 
     <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="lib/rianyday/dist/rainyday.min.js"></script>
-    <script type="text/javascript">
-        function run() {
-            var image = document.getElementById('rainImg');
-            image.onload = function () {
-                var engine = new RainyDay({
-                    image: this,
-                    parentElement: document.getElementById("rainCanvas")
-                });
-                engine.rain([
-                    [1, 2, 8000]
-                ]);
-                engine.rain([
-                    [0, 2, 0.5],
-                    [4, 4, 1]
-                ], 50);
-            };
-            image.crossOrigin = 'anonymous';
-            image.src = 'img/bg.jpg';
-        }
-        function resize() {
-            var win_height = $(window).outerHeight(),
-                win_width = $(window).outerWidth(),
-                img_height = $('#rainImg').outerHeight(),
-                img_width = $('#rainImg').outerWidth();
-
-            var fraction_height = win_height / img_height,
-                fraction_width = win_width / img_width,
-                fraction_result = ( fraction_height > fraction_width ) ? fraction_height : fraction_width;
-
-            $('canvas').css({
-                height:Math.ceil(fraction_result * img_height) + 'px',
-                width:Math.ceil(fraction_result * img_width) + 'px',
-                top:Math.floor((win_height - fraction_result * img_height) / 2) + 'px',
-                left:Math.floor((win_width - fraction_result * img_width) / 2) + 'px'
-            });
-
-        }
-
-        $(window).resize(function () {
-            resize();
-        });
-    </script>
+    <script type="text/javascript" src="js/page_rainy.js"></script>
 </head>
-<body class="natee" onload="run();">
+<body class="natee">
 <div class="rain-box">
     <img src="" alt="tu" id="rainImg">
 </div>
@@ -64,7 +23,7 @@
         <h3><a href="https://natee.github.io/">natee</a></h3>
     </div>
     <div class="pure-u-1-2 header-right">
-        <span class="menu-button icon-list4"></span>
+        <span class="menu-button icon-list4 toggle-contact"></span>
     </div>
 </header>
 <div class="container pure-g">
@@ -76,7 +35,7 @@
                 <p class="intro">他现在是一个前端，以后可能还会是前端，最终肯定不仅仅是前端。</p>
 
                 <p>
-                    <a class="pure-button pure-button-primary shine-white" href="javascript:scrollToContact();">联系他</a>
+                    <a class="pure-button pure-button-primary shine-white toggle-contact" href="javascript:;" >联系他</a>
                 </p>
             </div>
         </div>
