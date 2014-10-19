@@ -31,6 +31,10 @@ a {
     background-color:#15ABA0;
 }
 
+.bg-green-2{
+    background-color: #205066;
+}
+
 .flex{
     display: -webkit-box!important;
     display: -moz-box!important;
