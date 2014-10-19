@@ -134,7 +134,7 @@ a {
 }
 
 .container .indroduce{
-    background-color:#15ABA0;
+    /*background-color:#15ABA0;*/
     text-align: center;
     flex-direction: column;
     -webkit-flex-direction:column;
@@ -384,6 +384,7 @@ a {
 .footer .back{
     float: right;
     margin-top: 30px;
+    margin-right: 10px;
 }
 
 @media screen and (max-height: 500px) {
