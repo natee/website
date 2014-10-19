@@ -27,6 +27,10 @@ a {
     font-size: 12px;
 }
 
+.bg-green{
+    background-color:#15ABA0;
+}
+
 .flex{
     display: -webkit-box!important;
     display: -moz-box!important;
@@ -132,8 +136,7 @@ a {
     cursor: pointer;
 }
 
-.container .indroduce{
-    /*background-color:#15ABA0;*/
+.container .introduce{
     text-align: center;
     flex-direction: column;
     -webkit-flex-direction:column;
@@ -144,7 +147,7 @@ a {
     overflow-y: auto;
 }
 
-.container .indroduce .date{
+.container .introduce .date{
     font-size: 50%;
     opacity: 0.4;
 }
@@ -156,7 +159,7 @@ a {
 }
 
 .container .contact{
-    color:#666;
+    color:#fff;
     overflow: hidden;
 }
 .container .contact .inner{
@@ -298,7 +301,7 @@ a {
     left: 0;
     width: 50%;
     opacity: 0;
-    background-color: black;
+    /*background-color: black;*/
     color: #ffffff;
     text-align: center;
     overflow: auto;
@@ -352,7 +355,7 @@ a {
     bottom: 0;
     left:0;
     right:50%;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(0,0,0,0.2);
 }
 
 .footer .ft-nav ul{
@@ -386,7 +389,7 @@ a {
 }
 
 @media screen and (min-width: 48em){
-    .container .indroduce {
+    .container .introduce {
         height: 100%;
         position: absolute;
         left: 0;
@@ -411,7 +414,7 @@ a {
     .header .header-right {
         text-align: right;
     }
-    .container .indroduce {
+    .container .introduce {
         position: absolute;
         bottom:0;
         top:0;
@@ -457,7 +460,7 @@ a {
     }
     .footer a{
         /*display: block;*/
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(0,0,0,0.2);
         width:40px;
         height: 40px;
         line-height: 40px;
@@ -501,7 +504,7 @@ a {
         display: none;
     }
     .footer .show-nav:hover{
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(0,0,0,0.1);
         transition: all ease 0.3s,
     }
     

@@ -36,13 +36,37 @@ function resize() {
 
 }
 
+function checkIsMobile(){
+    // 判断是否为移动端运行环境
+    if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+        if (window.location.href.indexOf("?mobile") < 0) {
+            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {// 判断访问环境是 Android|webOS|iPhone|iPod|BlackBerry 则加载以下样式
+                return 'phone';
+            }
+            else if (/iPad/i.test(navigator.userAgent)) {// 判断访问环境是 iPad 则加载以下样式
+                return 'iPad';
+            }
+            else {// 判断访问环境是 其他移动设备 则加载以下样式
+                return 'other';
+            }
+        }
+    }
+    return 'pc'
+}
+
 $(window).resize(function () {
     resize();
 });
 
 $(function(){
-    initRain();
-    resize();
+    var ua = checkIsMobile();
+    if(ua === 'pc'){
+        initRain();
+        resize();
+    }else{
+        // 性能原因移动端不调用canvas画水滴，用背景色代替。
+        $(".container").find(".introduce").addClass("bg-green");
+    }
 
     $(".toggle-contact").on("click",function(){
         if($(".contact").hasClass("active")){
