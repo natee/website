@@ -11,6 +11,18 @@ a {
     transitiong: color ease 0.3s, border ease 0.3s, background ease 0.3s;
 }
 
+.c9{
+    color: #999;
+}
+
+.cf{
+    color: #fff;
+}
+
+.ft12{
+    font-size: 12px;
+}
+
 .flex{
     display: -webkit-box;
     display: -moz-box;
@@ -195,10 +207,10 @@ a {
     margin: 0 0 0.5em;
 }
 
-.natee .skill .skill-item p {
+.natee .skill .skill-item p, .natee .experence p {
     font-size: 14px;
     line-height: 1.4em;
-    margin-top: 0;
+    margin: 0;
 }
 
 .natee .experence {
@@ -207,24 +219,44 @@ a {
     padding: 2em;
 }
 
-.natee .experence .head {
-    color: #fff;
+.natee .experence .p-list{
 }
 
-.natee .experence .content {
-    margin-bottom: 3em;
+.natee .experence .p-list, .natee .experence .list-content {
+    list-style: none;
+    padding-left: 0;
+    margin:0;
 }
 
-.natee .experence .list {
+.natee .experence .p-list > li{
+    padding: 1.5em 0;
+    border-bottom: 1px solid #22354A;
+    border-top: 1px solid #364657;
+}
+
+.natee .experence .p-list > li:first-child{
+    border-top:none;
+}
+
+.natee .experence .p-list > li:last-child{
+    border-bottom:none;
+}
+
+.natee .experence .list-content li{
+    padding: 10px 0;
+}
+.natee .experence .list-content li:first-child{
+    margin-top:10px;
+}
+
+.natee .experence .p-list .p-name{
     margin-bottom: 10px;
+    color: #fff;
+    font-size:14px;
 }
 
-.natee .experence .list-content {
-    margin-left: 0.4em;
-}
-
-.natee .experence .list ul li {
-    line-height: 1.5em;
+.natee .experence .p-list .intro{
+    padding-left:1em;
 }
 
 .contact {
