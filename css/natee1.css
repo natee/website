@@ -11,6 +11,10 @@ a {
     transitiong: color ease 0.3s, border ease 0.3s, background ease 0.3s;
 }
 
+.hide{
+    display: none;
+}
+
 .c9{
     color: #999;
 }
@@ -130,11 +134,11 @@ a {
 }
 
 .container .indroduce{
+    background-color:#15ABA0;
     text-align: center;
     flex-direction: column;
     -webkit-flex-direction:column;
     height: 100%;
-    min-height: 430px;
     color:#fff;
     font-size:200%;
     position: absolute;
@@ -158,6 +162,7 @@ a {
 
 .container .contact{
     color:#666;
+    overflow: hidden;
 }
 .container .contact .inner{
     width:100%;
@@ -344,16 +349,17 @@ a {
 
 .footer {
     height: 60px;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     bottom: 0;
     left:0;
-    right:0;
-    background-color: rgba(0, 0, 0, 0.05);
+    right:50%;
+    background-color: rgba(255,255,255,0.2);
 }
-.footer ul{
-    float: left;
+
+.footer .ft-nav ul{
     margin: 0;
+    float: left;
     height: 60px;
 }
 .footer li{
@@ -361,12 +367,99 @@ a {
     line-height: 60px;
     margin-right:10px;
 }
-.footer li a{
+.footer a{
     font-size:12px;
     color:rgba(255,255,255,0.6);
 
 }
-.footer li a:hover{
+.footer a:hover{
     color:rgba(255,255,255,1);
-    transitiong: color ease 0.3s,
+    transition: color ease 0.3s,
+}
+.footer .show-nav{
+    font-size: 14px;
+    position: relative;
+    z-index:3;
+}
+.footer .back{
+    float: right;
+    margin-top: 30px;
+}
+
+@media screen and (max-height: 500px) {
+    
+    .footer{
+        height: 40px;
+        left:10px;
+        bottom: 10px;
+        background: none;
+    }
+    
+    .footer .ft-nav{
+        display: none;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: absolute;
+        z-index: 2;
+
+        left: 20px;
+        bottom: 20px;
+    }
+    .footer li a{
+        position: absolute;
+        z-index: 2;
+        overflow: hidden;
+        -webkit-transition: all linear .15s;
+    }
+    .footer a{
+        /*display: block;*/
+        background-color: rgba(255,255,255,0.2);
+        width:40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    .footer li a.first{
+        left:-20px;
+        bottom:40px;
+    }
+    .footer li a.second{
+        left:20px;
+        bottom:20px;
+    }
+    .footer li a.third{
+        left:40px;
+        bottom:-20px;
+    }
+    .footer .show-i{
+        opacity: 1;
+        -webkit-transform: translate(0px,0) scale(1);
+        pointer-events: auto;
+    }
+    .footer .hide-i{
+        opacity: 0;
+        -webkit-transform: translate(-100px,100px) scale(0.2);
+        pointer-events: none;
+    }
+    .footer .ft-nav ul{
+        padding:0;
+    }
+    .footer .show-nav{
+        display: block;
+    }
+    .footer .back{
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+    }
+    .footer .back span{
+        display: none;
+    }
+    .footer .show-nav:hover{
+        background-color: rgba(255,255,255,0.3);
+        transition: all ease 0.3s,
+    }
+    
 }

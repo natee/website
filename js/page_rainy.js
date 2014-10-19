@@ -45,6 +45,34 @@ $(function(){
     resize();
 
     $(".toggle-contact").on("click",function(){
-        $(".contact").toggleClass("active");
-    })
+        if($(".contact").hasClass("active")){
+            $(".contact").removeClass("active");
+            $(".back").hide();
+        }else{
+            $(".contact").addClass("active");
+            $(".back").show();
+        }
+    });
+
+    $("#showNav").on("click",function(){
+        if($(".ft-nav .first").hasClass("show-i")){
+            $(".ft-nav .third").addClass('hide-i').removeClass('show-i');
+            setTimeout(function(){
+                $(".ft-nav .second").addClass('hide-i').removeClass('show-i');
+            },100);
+            setTimeout(function(){
+                $(".ft-nav .first").addClass('hide-i').removeClass('show-i');
+            },200);
+        }else{
+            $(".ft-nav").show();
+            $(".ft-nav .first").addClass('show-i').removeClass('hide-i');
+            setTimeout(function(){
+                $(".ft-nav .second").addClass('show-i').removeClass('hide-i');
+            },100);
+            setTimeout(function(){
+                $(".ft-nav .third").addClass('show-i').removeClass('hide-i');
+            },200);
+        }
+        
+    });
 });
