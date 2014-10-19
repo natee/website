@@ -232,6 +232,14 @@ a {
     font-size: 14px;
     line-height: 1.4em;
     margin: 0;
+    
+}
+.natee .experence p{
+    filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -webkit-filter:blur(2px);
 }
 
 .natee .experence {
