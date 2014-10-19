@@ -7,6 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/icons.css">
     <link rel="stylesheet" href="css/pure.css">
     <link rel="stylesheet" href="css/natee1.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/grids-responsive-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/grids-responsive.css">
+    <!--<![endif]-->
 
     <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="lib/rianyday/dist/rainyday.min.js"></script>
@@ -20,14 +26,14 @@
 
 <header class="header pure-g">
     <div class="pure-u-1-2 header-left">
-        <h3><a href="https://natee.github.io/">natee</a></h3>
+        <h3><a href="https://github.com/natee">natee</a></h3>
     </div>
     <div class="pure-u-1-2 header-right">
         <span class="menu-button icon-list4 toggle-contact"></span>
     </div>
 </header>
 <div class="container pure-g">
-    <section class="pure-u-1-2 indroduce flex">
+    <section class="pure-u-1 pure-u-md-1-2 indroduce flex">
         <div class="basic text-center">
             <div class="basic-box">
                 <h3 class="head text-shadow">对赵可感兴趣？</h3>
@@ -85,12 +91,12 @@
             </a>
         </footer>
     </section>
-    <section class="pure-u-1-2 main">
+    <section class="pure-u-1 pure-u-md-1-2 main">
         <div class="skill">
             <h2 class="head">职业技能</h2>
 
             <div class="pure-g">
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-html.jpg" alt="html(5)">
                     </div>
@@ -98,7 +104,7 @@
 
                     <p>知道语义性的含义，熟练手写符合w3c标准的HTML页面。对于HTML5的一些地理位置、Localstorage、Web SQL停留在个人练习中。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img flip-in">
                         <img src="img/icon-css.jpg" alt="css(3)">
                     </div>
@@ -107,7 +113,7 @@
                     <p>
                         熟练使用CSS对网页进行（自适应）布局，了解不同浏览器的兼容性。对于CSS3中常用的效果基本会用，用过一些CSS框架，如grid.css，reset.css，pure.css等对于CSS3动画、高级效果处于要用则学，不用则研究的状态。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-js.jpg" alt="Javascript">
                     </div>
@@ -115,7 +121,7 @@
 
                     <p>我的目标是能够在这项技能上有所突破（代码的合理的组织、优雅的写法），追求这方面的进步，打破瓶颈。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img fade-in-right">
                         <img src="img/icon-jquery.jpg" alt="jQuery">
                     </div>
@@ -123,7 +129,7 @@
 
                     <p>JS的一个类库，基本上可以熟练使用。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-angular.jpg" alt="AngularJS">
                     </div>
@@ -131,7 +137,7 @@
 
                     <p>前端框架，用起来还是比较愉快的，极大减轻了对数据方面的处理，库重水深。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img">
                         <img src="img/icon-nodejs.jpg" alt="NodeJS">
                     </div>
@@ -139,7 +145,7 @@
 
                     <p>学习过一段时间，对于这个东西停留在基本的操作上，写过个人小博客作为练习。对于NodeJS的优势没有过具体的应用，其更新略快，也无力持续学习。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-bootstrap.jpg" alt="bootstrap">
                     </div>
@@ -147,7 +153,7 @@
 
                     <p>很强大的一个前端框架，自适应布局，各种组件等。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-gulp.png" alt="gulp">
                     </div>
@@ -155,7 +161,7 @@
 
                     <p>前端领域的构建工具（任务管理工具），隐隐有超过Grunt的意思。这项技术对于重复性的劳动可谓是雪中送炭，熟练使用创建基本任务。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-less.jpg" alt="less">
                     </div>
@@ -163,7 +169,7 @@
 
                     <p>把CSS赋予动态语言特性，可以写更少的代码达到效果。但是实际编译出来的代码量远远超过手写，所以我建议能不用就别用。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-ps.jpg" alt="Photoshop">
                     </div>
@@ -171,7 +177,7 @@
 
                     <p>熟练使用Photoshop，曾经做过几个网站的UI设计。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-git.jpg" alt="Git">
                     </div>
@@ -179,7 +185,7 @@
 
                     <p>版本管理工具，不用说太多。</p>
                 </div>
-                <div class="skill-item pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="skill-item pure-u-1-2 pure-u-md-1-1">
                     <div class="img bounce-down">
                         <img src="img/icon-svn.jpeg" alt="Subversion">
                     </div>
@@ -193,10 +199,10 @@
             <h2 class="head cf">项目经验</h2>
 
             <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5">
+                <!-- <div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5">
                     <img width="300" src="img/file-icons.png">
-                </div>
-                <div class="pure-u-1 pure-u-md-3-5 pure-u-lg-3-5">
+                </div> -->
+                <div class="pure-u-1-1">
                     <ul class="p-list">
                         <li class="list">
                             <div class="head cf">

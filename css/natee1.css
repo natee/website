@@ -28,14 +28,14 @@ a {
 }
 
 .flex{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: flex;
-    align-items:center;
-    -webkit-align-items:center;
-    justify-content: space-around;
-    -webkit-justify-content:space-around;
+    display: -webkit-box!important;
+    display: -moz-box!important;
+    display: -webkit-flex!important;
+    display: flex!important;
+    align-items:center!important;
+    -webkit-align-items:center!important;
+    justify-content: space-around!important;
+    -webkit-justify-content:space-around!important;
 }
 
 .full-bg {
@@ -116,7 +116,7 @@ a {
 }
 
 .header .header-left, .header .header-right {
-    padding: 0 5.57%;
+    padding: 0 5%;
 }
 
 .header-left a {
@@ -127,9 +127,8 @@ a {
 .header-right .menu-button {
     color: #ccc;
     font-size: 30px;
-    display: table-cell;
-    vertical-align: middle;
     height: 60px;
+    line-height: 60px;
     cursor: pointer;
 }
 
@@ -138,15 +137,11 @@ a {
     text-align: center;
     flex-direction: column;
     -webkit-flex-direction:column;
-    height: 100%;
     color:#fff;
     font-size:200%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 50%;
-    overflow: auto;
+
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .container .indroduce .date{
@@ -180,13 +175,8 @@ a {
 
 .container .main {
     background-color: #fff;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    left: 50%;
-    overflow: auto;
-    padding-top: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .natee .skill {
@@ -385,6 +375,50 @@ a {
     float: right;
     margin-top: 30px;
     margin-right: 10px;
+}
+
+@media screen and (min-width: 48em){
+    .container .indroduce {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 50%;
+    }
+    .container .main {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 50%;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 48em){
+    .header .header-left{
+        text-align: left;
+    } 
+    .header .header-right {
+        text-align: right;
+    }
+    .container .indroduce {
+        position: absolute;
+        bottom:0;
+        top:0;
+    }
+    .contact{
+        width:100%;
+    }
+    .footer{
+        right:0;
+        background-color: rgba(0,0,0,0.2);
+    }
+    .container .main {
+        position: absolute;
+        top:100%;
+    }
 }
 
 @media screen and (max-height: 500px) {
