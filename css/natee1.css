@@ -129,21 +129,20 @@ a {
     cursor: pointer;
 }
 
-.container {
-
-}
-
-.container .indroduce {
-    position: absolute;
+.container .indroduce{
     text-align: center;
-    padding-top: 60px;
     flex-direction: column;
     -webkit-flex-direction:column;
     height: 100%;
     min-height: 430px;
-    width:50%;
     color:#fff;
     font-size:200%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 50%;
+    overflow: auto;
 }
 
 .container .indroduce .date{
