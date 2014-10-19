@@ -40,7 +40,7 @@ function checkIsMobile(){
     // 判断是否为移动端运行环境
     if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
         if (window.location.href.indexOf("?mobile") < 0) {
-            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {// 判断访问环境是 Android|webOS|iPhone|iPod|BlackBerry 则加载以下样式
+            if (/Android|webOS|iPhone|iPod|BlackBerry|MX/i.test(navigator.userAgent)) {// 判断访问环境是 Android|webOS|iPhone|iPod|BlackBerry 则加载以下样式
                 return 'phone';
             }
             else if (/iPad/i.test(navigator.userAgent)) {// 判断访问环境是 iPad 则加载以下样式

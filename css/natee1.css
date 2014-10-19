@@ -388,7 +388,7 @@ a {
     margin-right: 10px;
 }
 
-@media screen and (min-width: 48em){
+@media screen and (min-width: 769px){
     .container .introduce {
         height: 100%;
         position: absolute;
@@ -407,7 +407,7 @@ a {
     }
 }
 
-@media screen and (max-width: 48em){
+@media screen and (max-width: 768px){
     .header .header-left{
         text-align: left;
     } 
