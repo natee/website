@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "version": "0.0.1",
+  "repository": "https://github.com/natee/natee.github.io",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.6.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000"
+  }
+}
