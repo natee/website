@@ -436,6 +436,13 @@ a {
     }
 }
 
+/*special effect*/
+.font-colorful{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient( to bottom, #9588DD, #9588DD 1.4em, #DD88C8 1.4em, #DD88C8 2.8em, #D3DD88 2.8em, #D3DD88 4.2em, #88B0DD 4.2em, #88B0DD);
+}
+
 @media screen and (max-height: 500px) {
     
     .footer{
