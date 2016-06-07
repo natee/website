@@ -97,6 +97,6 @@ $(function(){
                 $(".ft-nav .third").addClass('show-i').removeClass('hide-i');
             },200);
         }
-        
+
     });
 });
