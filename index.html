@@ -5,18 +5,10 @@
     <title>前端工程师-赵可</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0， user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/pure.css">
-    <link rel="stylesheet" href="css/natee1.css">
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/grids-responsive-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="css/grids-responsive.css">
-    <!--<![endif]-->
-    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="lib/rianyday/dist/rainyday.min.js"></script>
-    <script type="text/javascript" src="js/page_rainy.js"></script>
+    <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body class="natee">
@@ -89,188 +81,40 @@
             </footer>
         </section>
         <section class="pure-u-1 pure-u-md-1-2 main">
-            <div class="skill">
-                <h2 class="head">职业技能</h2>
+            <div class="skill" id="jSkill">
+                <h2 class="head">{{mName}}</h2>
                 <div class="pure-g">
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-html.jpg" alt="html(5)">
-                        </div>
-                        <h3>HTML(5)</h3>
-                        <p>语义性，熟练手写符合w3c标准的HTML页面。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img flip-in">
-                            <img src="img/icon-css.jpg" alt="css(3)">
-                        </div>
-                        <h3>CSS(3)</h3>
-                        <p class="font-colorful">
-                            熟练使用CSS对网页进行（自适应）布局，了解不同浏览器的兼容性。
-                            <br /> 这里有一个彩虹样式。
-                        </p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-js.jpg" alt="Javascript">
-                        </div>
-                        <h3>Javascript</h3>
-                        <p>你知道这个东西不简单，现在追求能够用优雅的代码实现功能。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img fade-in-right">
-                            <img src="img/icon-jquery.jpg" alt="jQuery">
-                        </div>
-                        <h3>jQuery</h3>
-                        <p>JS的一个类库，基本上可以熟练使用。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-angular.jpg" alt="AngularJS">
-                        </div>
-                        <h3>AngularJS</h3>
-                        <p>前端框架，用起来还是比较愉快的，极大减轻了对数据方面的处理，库重水深。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
+
+                    <div class="skill-item pure-u-1-2 pure-u-md-1-1"  v-for="skill in skills">
                         <div class="img">
-                            <img src="img/icon-nodejs.jpg" alt="NodeJS">
+                            <img v-bind:src="skill.img" v-bind:alt="skill.name">
                         </div>
-                        <h3>NodeJS</h3>
-                        <p>以前拿来增删改查，现在用来自动化。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-bootstrap.jpg" alt="bootstrap">
-                        </div>
-                        <h3>BootStrap</h3>
-                        <p>很强大的一个前端框架，自适应布局，各种组件等。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-gulp.png" alt="gulp">
-                        </div>
-                        <h3>Gulp</h3>
-                        <p>前端领域的构建工具（任务管理工具），隐隐有超过Grunt的意思。这项技术对于重复性的劳动可谓是雪中送炭，熟练使用创建基本任务。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-less.jpg" alt="less">
-                        </div>
-                        <h3>Less</h3>
-                        <p>把CSS赋予动态语言特性，可以写更少的代码达到效果。但是实际编译出来的代码量远远超过手写，所以我建议能不用就别用。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-ps.jpg" alt="Photoshop">
-                        </div>
-                        <h3>Phtoshop</h3>
-                        <p>熟练使用Photoshop，曾经做过几个网站的UI设计。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-git.jpg" alt="Git">
-                        </div>
-                        <h3>Git</h3>
-                        <p>版本管理工具，不用说太多。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img bounce-down">
-                            <img src="img/icon-svn.jpeg" alt="Subversion">
-                        </div>
-                        <h3>SVN</h3>
-                        <p>版本管理工具，不用说太多。</p>
+                        <h3>{{skill.name}}</h3>
+                        <p v-html="skill.intro" v-bind:class="{'font-colorful':skill.name == 'CSS(3)'}"></p>
                     </div>
                 </div>
             </div>
-            <div class="experence">
-                <h2 class="head cf">项目经验</h2>
+            <div class="experence" id="jExp">
+                <h2 class="head cf">{{mName}}</h2>
                 <div class="pure-g">
-                    <!-- <div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5">
-                    <img width="300" src="img/file-icons.png">
-                </div> -->
                     <div class="pure-u-1-1">
                         <ul class="p-list">
-                            <li class="list">
+                            <li class="list" v-for="exp in exps">
                                 <div class="head cf">
-                                    <span class="icon-office" title="就职公司"></span>
-                                    <span class="">海致网络技术（北京）有限公司</span>
-                                    <span class="ft12">（2013-10&nbsp;至&nbsp;今）</span>
+                                    <span class="icon-office" v-bind:title="exp.company"></span>
+                                    <span>{{exp.company}}</span>
+                                    <span class="ft12">（{{exp.from}}&nbsp;至&nbsp;{{exp.to}}）</span>
                                 </div>
                                 <ul class="list-content">
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>BDP商业数据平台</div>
+                                    <li v-for="project in exp.projects">
+                                        <div class="p-name"><span class="icon-text"></span>{{project.name}}</div>
                                         <div class="intro">
-                                            <p>数据分析及可视化软件。<a href="https://me.bdp.cn" target="_blank" class="link">个人版体验</a></p>
+                                            <p v-html="project.intro"></p>
                                             <p class="skill-tags">
-                                                <span class="skill-tag">AngularJS</span>
-                                                <span class="skill-tag">NodeJS</span>
-                                                <span class="skill-tag">Grunt</span>
+                                                <span class="skill-tag" v-for="tag in project.tags">
+                                                {{tag}}
+                                                </span>
                                             </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="p-name">
-                                            <span class="icon-text"></span> 其它各种项目略过
-                                        </div>
-                                        <div class="intro">
-                                            <p>......</p>
-                                            <p class="skill-tags">
-                                                <span class="skill-tag">jQuery</span>
-                                                <span class="skill-tag">Smarty</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list">
-                                <div class="head cf">
-                                    <span class="icon-office" title="就职公司"></span>
-                                    <span class="">北京艾德思奇科技有限公司</span>
-                                    <span class="ft12">（2013-06&nbsp;至&nbsp;2013-10）</span>
-                                </div>
-                                <ul class="list-content">
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>艾德聚合平台重构</div>
-                                        <div class="intro">
-                                            <p>艾德聚合平台是为移动APP开发者提供的一个信息管理平台，功能是发布应用，展示应用相关数据。</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="head cf">
-                                    <span class="icon-office" title="实习公司"></span>
-                                    <span class="">中国科学院化学工程研究所</span>
-                                    <span class="ft12">（2012-04&nbsp;至&nbsp;2013-05）</span>
-                                </div>
-                                <ul class="list-content">
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>中国循环经济技术平台子项目--企业黄页</div>
-                                        <div class="intro">
-                                            <p>包括企业黄页项目和公司站点项目，均为门户性质的网站。</p>
-                                            <p>负责UI设计和前端开发工作</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>化合物搜索引擎ChemDB Portal改版</div>
-                                        <div class="intro">
-                                            <p>学术性搜索引擎+门户性质信息网站，化学品电子商务类网站。</p>
-                                            <p>负责网站新版本UI设计和前端重构工作。</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="head cf">
-                                    <span class="icon-office" title="创业公司"></span>
-                                    <span class="">北京艾迪创想信息科技有限公司</span>
-                                    <span class="ft12">（2010-10&nbsp;至&nbsp;2012-11）</span>
-                                </div>
-                                <ul class="list-content">
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>开吃吧</div>
-                                        <div class="intro">
-                                            <p>餐饮O2O，高校、白领外卖网。</p>
-                                            <p>自主创业项目，包括PC版、移动html5版，前端独立开发。</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -281,6 +125,13 @@
             </div>
         </section>
     </div>
+
+    <script type="text/javascript" src="lib/vue/vue.js"></script>
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/rianyday/dist/rainyday.min.js"></script>
+    <script type="text/javascript" src="js/page_rainy.js"></script>
+
+    <script type="text/javascript" src="js/site.js"></script>
     <script type="text/javascript">
     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F949b1e738c46cb1afe64be0eacbe7826' type='text/javascript'%3E%3C/script%3E"));
