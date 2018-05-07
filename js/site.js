@@ -62,7 +62,7 @@
     var exps = [{
       company: '海致网络技术（北京）有限公司',
       from: '2013-10',
-      to: '',
+      to: '2018-01',
       projects: [{
         name: 'BDP商业数据平台',
         intro: '数据分析及可视化软件。<a href="https://me.bdp.cn" target="_blank" class="link">个人版体验</a>',
