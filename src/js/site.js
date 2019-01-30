@@ -1,61 +1,63 @@
-(function () {
+  import Vue from 'vue';
+  window.Vue = Vue;
+
   var app = {};
 
   var skills = [{
     name: 'HTML(5)',
-    img: 'img/icon-html.png',
+    img: require('../img/icon-html.png'),
     intro: '语义性，熟练手写符合w3c标准的HTML页面。'
   }, {
     name: 'CSS(3)',
-    img: 'img/icon-css.png',
+    img: require('../img/icon-css.png'),
     intro: '熟练使用CSS对网页进行（自适应）布局，了解不同浏览器的兼容性。<br /> 这里有一个彩虹样式。'
   }, {
     name: 'Javascript',
-    img: 'img/icon-js.png',
+    img: require('../img/icon-js.png'),
     intro: '你知道这个东西不简单，现在追求能够用优雅的代码实现功能。'
   }, {
     name: 'jQuery',
-    img: 'img/icon-jquery.png',
+    img: require('../img/icon-jquery.png'),
     intro: 'JS的一个类库，基本上可以熟练使用。'
   }, {
     name: 'AngularJS',
-    img: 'img/icon-angular.png',
+    img: require('../img/icon-angular.png'),
     intro: '前端框架，用起来还是比较愉快的，极大减轻了对数据方面的处理，库重水深。'
   }, {
     name: 'VueJS',
-    img: 'img/icon-vue.png',
+    img: require('../img/icon-vue.png'),
     intro: '渐进式JavaScript框架，易用、灵活、高效。'
   }, {
     name: 'NodeJS',
-    img: 'img/icon-nodejs.png',
+    img: require('../img/icon-nodejs.png'),
     intro: '以前拿来增删改查，现在用来自动化。'
   }, {
     name: 'BootStrap',
-    img: 'img/icon-bootstrap.png',
+    img: require('../img/icon-bootstrap.png'),
     intro: '很强大的一个前端框架，自适应布局，各种组件等。'
   }, {
     name: 'webpack',
-    img: 'img/icon-webpack.png',
+    img: require('../img/icon-webpack.png'),
     intro: '构建工具'
   }, {
     name: 'Gulp',
-    img: 'img/icon-gulp.png',
+    img: require('../img/icon-gulp.png'),
     intro: '前端领域的构建工具（任务管理工具），隐隐有超过Grunt的意思。这项技术对于重复性的劳动可谓是雪中送炭，熟练使用创建基本任务。'
   }, {
     name: 'Less',
-    img: 'img/icon-less.png',
+    img: require('../img/icon-less.png'),
     intro: '把CSS赋予动态语言特性，可以写更少的代码达到效果。但是实际编译出来的代码量远远超过手写，所以我建议能不用就别用。'
   }, {
     name: 'Phtoshop',
-    img: 'img/icon-ps.png',
+    img: require('../img/icon-ps.png'),
     intro: '熟练使用Photoshop，曾经做过几个网站的UI设计。'
   }, {
     name: 'Sketch',
-    img: 'img/icon-sketch.png',
+    img: require('../img/icon-sketch.png'),
     intro: '熟练使用Sketch切图，进行一些简单的设计。'
   }, {
     name: 'Git',
-    img: 'img/icon-git.png',
+    img: require('../img/icon-git.png'),
     intro: '现在只用git'
   }];
 
@@ -123,7 +125,7 @@
 
   function initRain(){
     var img = new Image();
-    img.src = '../img/bg.jpg';  
+    img.src = require('../img/bg.jpg');  
     img.onload = function(){
     var engine = new RainyDay({
       image: img,
@@ -139,16 +141,20 @@
       250);
     }
   }
+
+  function staticBg(){
+    document.querySelector("#mainView").classList.add("bg-green");
+  }
   
   function adpter(){
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (!isMobile) {
-      initRain();
+      // initRain();
   
       // TODO resize这个事情可以不考虑
     } else {
       // 性能原因移动端不调用canvas画水滴，用背景色代替。
-      document.querySelector("#mainView").classList.add("bg-green");
+      staticBg();
     }
   }
 
@@ -160,6 +166,7 @@
       displayContactInfo: false
     },
     mounted() {
+      staticBg();
       adpter();
     },
     methods: {
@@ -168,4 +175,3 @@
       }
     }
   });
-})();

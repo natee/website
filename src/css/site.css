@@ -42,24 +42,6 @@ a {
 
 /*some effect*/
 
-/*边框发光*/
-
-@keyframes shineWhite {
-  0% {
-    box-shadow: 0 0 15px #dfdfdf;
-  }
-  50% {
-    box-shadow: 0 0 30px #fff;
-  }
-  100% {
-    box-shadow: 0 0 15px #dfdfdf;
-  }
-}
-
-.shine-white {
-  animation: shineWhite 2s linear infinite;
-}
-
 /*显示玻璃光效*/
 
 .blind-effect {
@@ -160,6 +142,37 @@ a {
   padding: 0.5em 1.5em;
   margin: 1em 0;
   background: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/*
+ * 用box-shadow动画发现会卡顿，但之前是好的，单独写case也是好的
+ * 改用opacity做动画，防止浏览器重绘
+ * 参考 https://juejin.im/entry/5abb6e426fb9a028d1412717
+ */
+.natee .pure-button-primary::after {
+  content: '';
+  position: absolute;
+  /* z-index: -1; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 30px #dfdfdf;
+  will-change: opacity;
+  opacity: 0;
+  animation: fadeIn 1s infinite linear alternate-reverse;
+}
+
+@keyframes fadeIn {
+  form {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .container .contact {
@@ -452,6 +465,7 @@ a {
 }
 
 /* 圆圈弹出式导航 */
+
 @media screen and (max-height: 500px) {
   .footer {
     background: none;
@@ -464,7 +478,6 @@ a {
     left: 10px;
     bottom: 10px;
   }
-
   .ft-item {
     background-color: rgba(0, 0, 0, 0.2);
     width: 40px;
@@ -485,7 +498,7 @@ a {
     text-overflow: ellipsis;
     transition: all linear .2s;
   }
-  .ft-nav .ft-item.ft-item--circle{
+  .ft-nav .ft-item.ft-item--circle {
     opacity: 1;
   }
   .ft-nav .ft-item.first {
@@ -517,5 +530,4 @@ a {
   .footer .back span {
     display: none;
   }
-  
 }

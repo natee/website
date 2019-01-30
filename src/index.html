@@ -4,10 +4,6 @@
   <title>前端工程师-赵可</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-  <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/pure.css">
-  <link rel="stylesheet" href="css/grids-responsive.css">
-  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body class="natee">
@@ -22,7 +18,7 @@
       </div>
     </header>
     <div class="container pure-g">
-      <section id="mainView" class="pure-u-1 pure-u-md-1-2 introduce flex bg-green">
+      <section id="mainView" class="pure-u-1 pure-u-md-1-2 introduce flex">
         <div class="basic text-center">
           <div class="basic-box">
             <h3 class="head text-shadow">对赵可感兴趣？</h3>
@@ -30,7 +26,7 @@
               Now he is a Front-End engineer.
             </p>
             <p class="date">2013 - Now</p>
-            <span class="pure-button pure-button-primary shine-white" @click="toggleContact">联系他</span>
+            <span class="pure-button pure-button-primary" @click="toggleContact">联系他</span>
           </div>
         </div>
         <div class="contact flex blind-effect bg-green-2" :class="{'active': displayContactInfo == true}">
@@ -123,13 +119,10 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="lib/vue.min.js"></script>
-  <script type="text/javascript" src="lib/rainyday.min.js"></script>
-  <script type="text/javascript" src="js/site.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F949b1e738c46cb1afe64be0eacbe7826' type='text/javascript'%3E%3C/script%3E"));
-  </script>
+  </script> -->
 </body>
 
 </html>
