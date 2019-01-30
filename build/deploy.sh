@@ -22,8 +22,9 @@ if [ $? -ne 0 ]; then
 else
     echo "\033[32m \n 【构建成功，准备替换线上包...】 \033[0m"
     # 备份之前线上的代码，把构建结果dist_pre替换成docs
-    rm -rf docs
-    mv dist_pre docs
+    rm -rf ./static
+    rm -rf ./index.html
+    mv dist_pre ./
 
     echo '\033[32m \n上线完成 \033[0m'
 fi
