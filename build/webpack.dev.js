@@ -18,7 +18,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': JSON.stringify('development')
+      'process.env.NODE_ENV': JSON.stringify('development')
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),

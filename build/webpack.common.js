@@ -73,14 +73,15 @@ let webpackConfig = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       // chunks:['docs'],
-      template: path.resolve(__dirname, '../src/index.html'),
+      template: './src/index.html',
       inject: true,
       // minify: {
       //   removeComments: process.env.NODE_ENV === 'production',
       //   collapseWhitespace: process.env.NODE_ENV === 'production',
       //   removeAttributeQuotes: process.env.NODE_ENV === 'production'
       // },
-      chunksSortMode: 'dependency'
+      chunksSortMode: 'dependency',
+      favicon: './src/favicon.ico'
     })
   ],
   output: {
