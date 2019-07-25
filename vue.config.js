@@ -1,9 +1,13 @@
 module.exports = {
   productionSourceMap: process.env.NODE_ENV !== 'production',
+
   css:{
     extract: true,
   },
-  outputDir: '/docs', // 修改默认dist为docs，方便github pages查找docs目录下的静态资源
+
+  // 修改默认dist为docs，方便github pages查找docs目录下的静态资源
+  outputDir: 'docs',
+
   pages: {
     login: {
       // page 的入口
@@ -23,5 +27,7 @@ module.exports = {
       template: 'public/index.html',
       filename: 'resume.html',
     },
-  }
+  },
+
+  lintOnSave: false
 }

@@ -1,7 +1,10 @@
 .DS_Store
 node_modules
 /dist
+
+# 项目源码不公开
 /src
+
 package-lock.json
 
 # local env files
