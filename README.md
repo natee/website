@@ -1,10 +1,17 @@
-## 个人介绍 ##
+# website
+- 个人站点，随便耍耍
+- 前端简历，了解我
 
-您可以去natee的[主页](https://natee.github.io/)查看他的基本介绍。
+## 站点配置
 
-## 文章列表 ##
-* [angular中如何在input元素上使用filter?](https://github.com/natee/natee.github.io/issues/1)
+### 中国古典配色
+- 胭脂: #9d2932
+- 牙色: #efdeb0
+- 竹青: #7879262
+- 黛: #494166
+- 驼色: #a88462
+- 秋香色: #d9b612
 
-## 更新日志 ##
-- 2017-03
-修改vuejs版本。
+### 动画效果
+- [animate.css](https://daneden.github.io/animate.css/)
+- [anime](https://github.com/juliangarnier/anime/)
