@@ -5,7 +5,9 @@ module.exports = {
     extract: true,
   },
 
-  publicPath: process.env.NODE_ENV === 'production' ? '/website' : '/',
+  // publicPath: 'https://natee.github.io/website',
+  publicPath: process.env.NODE_ENV === 'production' ? 'https://natee.github.io/website' : '/',
+  
   // 修改默认dist为docs，方便github pages查找docs目录下的静态资源
   outputDir: 'docs',
 
