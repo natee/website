@@ -16,6 +16,7 @@
     "element-ui": "^2.4.11",
     "js-md5": "^0.7.3",
     "normalize.css": "^8.0.1",
+    "reveal.js": "^3.8.0",
     "vue": "^2.5.22",
     "vue-router": "^3.0.2"
   },
