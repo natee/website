@@ -4,6 +4,7 @@ node_modules
 
 # 项目源码不公开
 /src
+/static
 
 package-lock.json
 

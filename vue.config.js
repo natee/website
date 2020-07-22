@@ -26,6 +26,8 @@
   },
 */
 
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 const utils = require('./bin/utils');
 const pages = utils.addEntry();
  
@@ -44,5 +46,13 @@ module.exports = {
 
   pages: pages,
  
-  lintOnSave: false
+  lintOnSave: false,
+
+  configureWebpack: config => {
+    config.plugins.push(
+      new CopyWebpackPlugin([
+        { from: "./static", to: 'static' }
+      ])
+    );
+  },
 }
