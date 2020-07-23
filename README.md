@@ -12,6 +12,7 @@
 - [简约又舒爽的「文字动效」](https://natee.github.io/website/login.html#/aboutMe)
 - [「抖音」效果的404](https://natee.github.io/website/login.html#/404)
 - [获取登录密码指南](http://localhost:8081/login.html#/getPassword)
+- [生成随机三角纹理图形](http://localhost:8081/login.html#/trianglify)
 - ......
 
 ### 上帝账号
@@ -42,5 +43,3 @@
 
 ## TODO
 - [ ] 代码升级至Vue 3.x版本
-- [ ] 移除element-ui
-- [ ] 区分多页面标题
