@@ -13,7 +13,12 @@
 
 - [图片转点阵图](http://natee.github.io/website/login.html#/image2text)
   
-  ![image2text.png](assets/image2text.png)
+  ![image2dot.png](assets/image2dot.png)
+
+- [图片转字符图](http://natee.github.io/website/login.html#/image2text)
+
+  ![image2char.png](assets/image2char.png)
+
   
 
 ### 页面特效
