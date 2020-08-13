@@ -11,9 +11,13 @@
   
   ![trianglify.png](assets/trianglify.png)
 
+- [图片转方阵图](http://natee.github.io/website/login.html#/image2text)
+  
+  ![image2rect.png](assets/image2rect.png)
+
 - [图片转点阵图](http://natee.github.io/website/login.html#/image2text)
   
-  ![image2dot.png](assets/image2dot.png)
+  ![image2stippling.png](assets/image2stippling.png)
 
 - [图片转字符图](http://natee.github.io/website/login.html#/image2text)
 
